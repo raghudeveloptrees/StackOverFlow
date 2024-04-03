@@ -98,7 +98,7 @@ Install
 ````
 $ python3 -m pip install pymysql
 ````
-Update __init__.py which is located in folder 'main'
+Update _._init_._.py which is located in folder 'main'
 
 ````
 import pymysql
