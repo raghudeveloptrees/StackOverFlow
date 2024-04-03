@@ -98,7 +98,7 @@ Install
 ````
 $ python3 -m pip install pymysql
 ````
-Update _._init_._.py which is located in folder 'main'
+Update (underscoresymbol twice)init(underscoresymbol twice).py which is located in folder 'main'
 
 ````
 import pymysql
