@@ -87,6 +87,24 @@ For Postgresql usage*, you will need to download and install it.
 
 _*Note: You can skip postgresql installation if you're setting up this project using sqlite. simply just comment the postgresql configuration and uncomment sqlite configuration_
 
+If you want to use mysql then install using this command
+````
+$ pip install mysqlclient
+````
+
+If you are unable to install mysqlclient for this project try the below method
+
+Install
+````
+$ python3 -m pip install pymysql
+````
+Update __init__.py which is located in folder 'main'
+
+````
+import pymysql
+
+pymysql.install_as_MySQLdb()
+````
 
 
 Now run make <code>migrations</code> command, running make migrations command will perform Data Migrations to save the "Badges" in the database.
