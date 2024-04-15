@@ -16,7 +16,7 @@ settings.configure()
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://stackoverflow---clone.herokuapp.com/','localhost','http://127.0.0.1','stackoverflow---clone.herokuapp.com','.herokuapp.com']
+ALLOWED_HOSTS = ['*','https://stackoverflow---clone.herokuapp.com/','localhost','http://127.0.0.1','stackoverflow---clone.herokuapp.com','.herokuapp.com']
 
 # Application definition
 
@@ -128,23 +128,23 @@ WSGI_APPLICATION = 'main.wsgi.application'
 If you don't want to use postgresql then remove comment of sqlite's configuration and
 comment in the postgresql configuration
 """
-DATABASES = {
+'''DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
-}
+}'''
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'POSTGRESQL_NAME',
-#         'USER': 'POSTGRESQL_USER',
-#         'PASSWORD': 'POSTGRESQL_PASSWORD',
-#         'HOST': 'localhost',
-#         'PORT': '',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'database-1',
+        'USER': 'admin',
+        'PASSWORD': 'Admin123',
+        'HOST': 'database-1.cte0em6gqx4o.us-east-1.rds.amazonaws.com',
+        'PORT': '3306',
+    }
+}
 
 # Password validation
 
